@@ -1,0 +1,53 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "description": "This is Kylies Website (insert name here)",
+  "main": "index.html",
+  "type": "module",
+  "_comment" : "//npm install gh-pages --save-dev",
+  "scripts": {
+    "test": "echo \"npm sucessfulley ran the test script\" && exit 1",
+    "test-dev": "test",
+    "dev": "vite --port 3050",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "npm run build && cp -r dist ../dist_version_control/dist_$(date +%Y%m%d%H%M%S) && gh-pages -d dist -b client",
+    "start": "vite --port 0001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhamseyswork/kylies_website.git"
+  },
+  "keywords": [
+    "kylies",
+    "website",
+    "(Keywords)"
+  ],
+  "author": "OC Pace Setters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rhamseyswork/kylies_website/issues"
+  },
+  "homepage": "https://github.com/rhamseyswork/kylies_website#readme",
+  "dependencies": {
+    "dotenv": "^16.4.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.1.1",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.2.6"
+  }
+}
