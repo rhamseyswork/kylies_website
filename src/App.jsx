@@ -17,28 +17,6 @@ function App() {
     <>
       <SlideShow rightArrowIcon={rightArrow} leftArrowIcon={leftArrow} currIcon={currIcon} non_currIcon={nonCurrIcon} />
       <Navbar />
-      <Routes>
-        <Route
-          path='/'
-          element={<Home />}
-        />
-        <Route
-          path='/sign_up'
-          element={<SignUp />}
-        />
-        <Route
-          path='/clothing'
-          element={<Clothing />}
-        />
-        <Route
-          path='/trending'
-          element={<Trending />}
-        />
-        <Route
-          path='/events'
-          element={<Events />}
-        />
-      </Routes>
       </>
   );
 }

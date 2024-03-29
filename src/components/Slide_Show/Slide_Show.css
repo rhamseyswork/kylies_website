@@ -1,0 +1,21 @@
+
+
+.slideshow-Module-Movement{
+    display: flex;
+    flex-direction: row;
+}
+
+.slideshow-Module-Curr-Mod img{
+    width: 200px;
+    height: 100%;
+}
+
+.slideshow-Module-Curr-Sl {
+    display: flex;
+    flex-direction: row;
+}
+
+.slide-item img{
+    width: 50px;
+    height: 50px;
+}

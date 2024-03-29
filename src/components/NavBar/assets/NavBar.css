@@ -1,0 +1,9 @@
+.navBar ul li a:hover {
+    color: blue !important;
+    text-decoration: underline !important;
+}
+
+.navBar ul li a:active {
+    color: orange !important;
+    text-decoration: underline !important;
+}
