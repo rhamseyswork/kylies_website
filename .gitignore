@@ -1,3 +1,4 @@
 node_modules
 dist_version_control
 .env
+dist
