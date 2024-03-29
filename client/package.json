@@ -5,6 +5,7 @@
   "description": "This is Kylies Website (insert name here)",
   "main": "index.html",
   "type": "module",
+  "_comment" : "//npm install gh-pages --save-dev",
   "scripts": {
     "test": "echo \"npm sucessfulley ran the test script\" && exit 1",
     "test-dev": "test",
@@ -13,7 +14,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "npm run build && cp -r dist ../dist_version_control/dist_$(date +%Y%m%d%H%M%S) && gh-pages -d dist -b client",
     "start": "vite --port 0001"
   },
   "repository": {

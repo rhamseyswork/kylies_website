@@ -8,19 +8,19 @@ const NavBar = () => {
     <nav>
       <ul>
         <li>
-          <Link to='/about_us'>Sign up</Link>
+          <Link to='/sign_up'>Sign up</Link>
         </li>
         <li>
-          <Link to='/admissions'>Clothing</Link>
+          <Link to='/clothing'>Clothing</Link>
         </li>
         <li>
-          <Link to='/curriculum'>Home</Link>
+          <Link to='/'>Home</Link>
         </li>
         <li>
-          <Link to='/issaclife'>Trending (fire symbol)</Link>
+          <Link to='/trending'>Trending (fire symbol)</Link>
         </li>
         <li>
-          <Link to='/news_&_events'>Events</Link>
+          <Link to='/events'>Events</Link>
         </li>
       </ul>
     </nav>
