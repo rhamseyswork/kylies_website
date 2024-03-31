@@ -27,20 +27,19 @@ const LazyLoadPage = ({ tab }) => {
 function NavBar() {
   return (
     <>
-<Suspense fallback={<div>Nav bar Loading...</div>}>
-  <Nav_Bar Tabs={NavBarData.tabs}>
-    {NavBarData.title}
-  </Nav_Bar>
-</Suspense>
-<Routes>
-  <Route path='/' element={<Home />} />
-  {NavBarData.tabs.map((tab, index) => (
-    <Route key={tab} path={tab} element={<LazyLoadPage tab={tab} />} />
-  ))}
-  <Route path="*" element={<Error404 />} />
-</Routes>
+      <Suspense fallback={<div>Nav bar Loading...</div>}>
+        <Nav_Bar Tabs={NavBarData.tabs}>
+          {NavBarData.title}
+        </Nav_Bar>
+      </Suspense>
+      <Routes>
+        {NavBarData.tabs.map((tab, index) => (
+          <Route key={tab} path={tab} element={<LazyLoadPage tab={tab} />} />
+        ))}
+        <Route path='/' element={<Home />} />
+        <Route path="*" element={<Error404 />} />
+      </Routes>
     </>
-
   );
 }
 

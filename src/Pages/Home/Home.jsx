@@ -1,8 +1,9 @@
 import React from 'react';
+import './Home.css'
 
 const Home = () => {
   return (
-    <>
+    <div className="Home">
      <p>Import Scroll Module from &apos;/portfolio V2.0/Oc_Pace_Setters V1.0.0&apos;</p>
      <h2>Feature Clothing *Module* &apos;/portfolio V2.0/Clothing_website_mock&apos;</h2>
      <p>Import Scroll Module from &apos;/portfolio V2.0/Oc_Pace_Setters V1.0.0&apos;</p>
@@ -42,7 +43,7 @@ const Home = () => {
          <button type='submit'>Sign Up</button>
         </legend>
       </fieldset>
-    </>
+    </div>
   );
 };
 

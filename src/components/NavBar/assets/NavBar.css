@@ -1,3 +1,17 @@
+.navBar{
+    text-align: center;
+    font-size: 26px;
+}
+
+.navBar ul{
+    justify-content: center;
+    gap: 50px !important;
+}
+
+.navBar ul li{
+    gap: 50px;
+}
+
 .navBar ul li a:hover {
     color: blue !important;
     text-decoration: underline !important;

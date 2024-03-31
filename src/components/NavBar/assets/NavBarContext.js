@@ -1,8 +1,8 @@
 //Nav Bar Tabs.js
 //By: Rhamseys Garcia
 
-const title = "Nav Bar Tabs";
+const title = "Clothing Brand Name";
 
-const tabs=["Sign Up", "Clothing", "Home", "Trending", "Events"]
+const tabs=["LoginSignUp", "Clothing", "Home", "Trending", "Events"]
 
 export default {title, tabs};

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import slides from './Slide_Show_Index';
-import './Slide_Show.css';
+import slides from './assets/Slide_Show_Index';
+import './assets/Slide_Show.css';
 
 const Slide_Show = ({ leftArrowIcon, rightArrowIcon, currIcon, non_currIcon}) => {
   const [currentSlide, setCurrentSlide] = useState(0);

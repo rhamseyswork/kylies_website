@@ -3,6 +3,12 @@
 .slideshow-Module-Movement{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.slideshow-Module-Curr-Mod:first-child{
+    display: flex;
+    align;
 }
 
 .slideshow-Module-Curr-Mod img{
@@ -13,6 +19,8 @@
 .slideshow-Module-Curr-Sl {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 40%;
 }
 
 .slide-item img{
