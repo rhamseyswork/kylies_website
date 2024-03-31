@@ -12,7 +12,7 @@ export default defineConfig({
   define: {
     'process.env': process.env
   },
-  base: "/",
+  base: "https://rhamseyswork.github.io/kylies_website/",
   server: {
     port: 3000, // Change to the desired port number
     proxy: {
