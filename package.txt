@@ -1,1 +1,3 @@
 https://github.com/rhamseyswork/kylies_website#readme
+
+ && gh-pages -d dist -b client
